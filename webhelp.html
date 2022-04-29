@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Web Help Page</title>
+  </head>
+  <body>
+    <p><a href="index.html">Homepage</a>, <a href="webhelp.html">Web Help Page</a>, <a href="inputs.html">HTML Inputs</a>, <a href="contact.html">Contact Me</a></p>
+    <h1>Notes for Web Coding</h1>
+      <p>Here you will find a list of images relating to topics from the Udemy course refernceing sections and timestamps</p>
+      <P>Anchor Tag <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a">Mozilla</a></P>
+      <hr size="3" noshade>
+
+      <h4> Useful sites for notes:
+        <ol>
+          <li><a href="https://devdocs.io/">devdocs.io</a></li>
+          <li><a href="https://www.w3schools.com/">w3schools.com</a></li>
+          <li><a href="https://stackoverflow.com/">Stackoverflow.com</a></li>
+          <li><a href="https://docs.emmet.io/cheat-sheet/">docs.emmet.io/cheat-sheet/</a></li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">developer.mozilla.org</a></li>
+        </ol>
+      </h4>
+
+    <hr size="3" noshade>
+
+    <h1>Html Elements, Html Attributes and Html Tags</h1>
+      <p> Tags are used as requests to the publisher (web browser) to display the information in a particular way, there are always opening (start) tags and closing (end) tags which surround the contents.</p>
+      <p>Within the Html Elements there are Attributes, these are traits which are added to the Hmtl Element. such as how to align the text, how large or small the font is, the colour and so on. you can find out more from the devdocs website.</p>
+      <p>There are tags which do not require a closing tag, which is known as a self-closing tag, such as the BR tag (Line break which gives a space between content).</p>
+
+    <hr size="3" noshade>
+
+    <h1>Header Tags</h1>
+
+    <p>There are 6 levels of header tags, these are h1, h2, h3, h4, h5 and h6. the largest font is h1, getting smaller as the number increases.</p>
+
+      <h1>This is a H1 header tag</h1>
+      <h2>This is a H2 header tag</h2>
+      <h3>This is a H3 header tag</h3>
+      <h4>This is a H4 header tag</h4>
+      <h5>This is a H5 header tag</h5>
+      <h6>This is a H6 header tag</h6>
+
+    <!--
+    this ignores any coding within these symbols.
+    -->
+
+    <hr size="3" noshade>
+
+    <h2>How to make comments</h2>
+
+      <p>To type comments inside HMTL which are not shown on the webpage you need to use the following : open the tag (symbol)!-- and close using -->.</p>
+      <p>The --> can be placed at the end of a block of code which will make the code inside the block invisible</p>
+
+    <hr size="3" noshade>
+
+    <h2>HTML structures</h2>
+      <p>HTML files in coding need to be specified, therefore (!DOCTYPE hmtl>) is used to let browsers know what to render the code as. this also lets the browser know what version you're using.</p>
+      <p>Html is the latest version (html 5), hmtl 4t would be used in Atom to show the html version 4</p>
+
+    <h3>Head and Body tags</h3>
+      <p>HEAD tag requires an opening and a closing (head) (/head). this is the part of the HTML file that holds information about the webpage and how the browser how to handle the page. This can be things like what the webpage is called.</p>
+      <p>META Tag - is the tag which provides associated data to the webpage, such as the encoding they use, the description of the page, who the author is etc.</p>
+      <p>The META tag is always within the head tag.....</p>
+
+    <hr size="3" noshade>
+
+    <h2>Listing items</h2>
+      <p>here is an example of an unordered list (ul), listing all items inside using (li) list item. </p>
+
+        <ul>
+          <li>Coffee</li>
+          <li>Tea</li>
+          <li>Milk</li>
+        </ul>
+
+      <p>here is an example of an ordered list (ol), listing all items inside using (li) list item.</p>
+
+        <ol>
+          <li>Coffee</li>
+          <li>Tea</li>
+          <li>Milk</li>
+        </ol>
+
+    <h3>Nesting Lists within Lists</h3>
+      <ul>
+        <li>first item</li>
+        <li>second item
+        <!-- Look, the closing </li> tag is not placed here! -->
+          <ul>
+            <li>second item first subitem</li>
+            <li>second item second subitem
+            <!-- Same for the second nested unordered list! -->
+              <ul>
+                <li>second item second subitem first sub-subitem</li>
+                <li>second item second subitem second sub-subitem</li>
+                <li>second item second subitem third sub-subitem</li>
+              </ul>
+            </li> <!-- Closing </li> tag for the li that
+                        contains the third unordered list -->
+            <li>second item third subitem</li>
+          </ul>
+        <!-- Here is the closing </li> tag -->
+        </li>
+        <li>third item</li>
+      </ul>
+
+    <hr size="3" noshade>
+
+    <h2>Images</h2>
+
+    <p>To add images to your html, you will need to use the (img) tag and then specify the sorce of the image.</p>
+    <p>(<strong>img src</strong>="hyperlink to image on the web <strong><em>OR</em></strong> link to the file in the folder" <strong>alt</strong>="this is the alternative wording which displays here when the image cannot be located or loaded")</p>
+
+      <ul>
+        <li>Example using Web link:
+          <ul>
+            <li>(img src="data:image/jpeg;base64,/9j/4AAQSkZAD/2wCGKRMaP/2Q==" alt="deleted 90% of link due to length")
+            </li>
+          </ul>
+        </li>
+        <li>Example using file location:
+          <ul>
+              <li>(img src="Filename.jpg" alt="Remeber to use the .filetype")</li>
+          </ul>
+        </li>
+        <li>Example of images inside other folders:
+            <ul>
+              <li>(img src="Images\Filename.jpg" alt="file location pathing is required")</li>
+            </ul>
+        </li>
+      </ul>
+
+    <hr size="3" noshade>
+
+    <h2>Hyperlink</h2>
+      <p>To hyperlink in coding you will need to use the ANCHOR Tag also known as A</p>
+      <p>Below is an example of a hyper link using the ANCHOR and HREF attribute to provide the address, followed by the wording to be the link (Gaming Steam Store)</p>
+      <a href="https://store.steampowered.com/">Gaming Steam Store</a>
+      <p>another way to use hyperlinks is to link to another page within your website. to do this you will need to have the page in the same hierachy as the maion page</p>
+      <img src="C:\Users\patha\Downloads\hobbies location.jpg" alt="Web coding location">
+
+    <hr size="3" noshade>
+
+    <h2>Tables</h2>
+      <p>Within Tables there are several key elements, first being the <em><strong>TR</strong></em>, this refers to the table Row (in excel this would be row 1).</p>
+      <p>The next important element is the <em><strong>TD</strong></em>, this refers to the table data (cell A in excel or cell B, if you havve multiple TD elements within one TR)</p>
+      <p>Tables can also contain <strong>head/body/foot</strong> like a normal html page.</p>
+        <ol>
+          <li><strong>thead</strong> is the table header, what you would name your columns</li>
+            <ul>
+              <li>to list column A,B,C you would have <em><strong>TH[A column title]/TH</strong></em> then followed by another <em><strong>TH[B column title]/TH</strong></em> and so on</li>
+            </ul>
+          <li><strong>tbody</strong> is the table content, i.e your cell data</li>
+          <li><strong>tfoot</strong> is a row that appears at the bottom off the table, however this is barely used as you can use the TR/TD to make a bottom row</li>
+          <li><strong>Attributes</strong> - <em>it is vital to know that table Attributes are no longer used as this would be set up in CSS</em></li>
+            <ul>
+              <li><strong>Border="Number"</strong> will give your table an old fashioned border</li>
+              <li><strong>cellspacing="%value or number"</strong> will increase the spacing between cells</li>
+              <li><strong>cellpadding="number"</strong> puts the space around your content and the border</li>
+            </ul>
+        </ol>
+
+<br>
+
+      <h3>NESTED TABLE</h3>
+      <p>Nested tables allow you to have <em><strong>tables within tables</strong></em> which helps <strong>structure</strong> your cells if you want to display information neatly, below is an amended Skills section of the homepage</p>
+        <table border="1">
+          <tr>
+            <td>
+              <table>
+                <tr>
+                  <td>Gaming Awareness</td>
+                  <td>&#11088;&#11088;&#11088;&#11088;</td>
+                </tr>
+                <tr>
+                  <td>Gaming Reaction Speed</td>
+                  <td>&#11088;&#11088;&#11088;</td>
+                </tr>
+              </table>
+            </td>
+            <td>
+              <table>
+                <tr>
+                  <td>Html Coding</td>
+                  <td>&#11088;</td>
+                </tr>
+                <tr>
+                  <td>Building Pcs</td>
+                  <td>&#11088;&#11088;&#11088;</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+
+      <hr size="3" noshade>
+
+      <h3>Forms</h3>
+      <p>Forms allow your site to request information by allowing others to <em><strong>input</strong></em> data, setup passwords, sign up for notifications via checkboxes etc</p>
+      <p>to start adding forms into your website you will need to use the following Elements <em><strong>LABLE and INPUT</strong></em> Tags</p>
+      <p>the <em><strong>LABLE</strong></em> Tag is used to define the field, and the <em><strong>INPUT</strong></em> tag is used to inform the website what it is, such as checkbox, text, password etc</p>
+      <p>For more information on Form Attributes click <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input"><strong>HERE</strong></a></p>
+
+      <lable>This is where you would ask for Users Name</lable>
+      <input type="text" name="" value="">
+      <input type="submit" name="" value="Finish"> <!-- This allows for the Submit button to appear-->
+      <br>
+      <br>
+      <lable>To add structure simple add a br at the end</lable>
+      <input type="text" name="" value="check coding for example"><br>
+      <input type="submit" name="" value="SUBMIT"> <!--value is what you wish to be displayed-->
+      <br>
+      <br>
+      <label>Calendar</label>
+      <input type="date" name="" value="">
+
+      <hr size="3" noshade>
+
+
+
+  </body>
+</html>
